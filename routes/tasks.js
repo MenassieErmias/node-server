@@ -1,12 +1,15 @@
 import { Router } from "express";
 
-const router = Router();
+const tasksRouter = Router();
 
-const tasks = [];
+const tasks = [{
+  name: 'Menassie',
+  todo: 'Something'
+}];
 
-router.get('/', (req, res) => {
+tasksRouter.get('/', (req, res) => {
   res.status(200).json(tasks);
 })
 
 
-export default router;
+export default tasksRouter;

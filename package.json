@@ -1,0 +1,16 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "Node api and server",
+  "main": "server.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "server",
+    "node",
+    "api"
+  ],
+  "author": "Menassie Ermias",
+  "license": "ISC"
+}

@@ -1,8 +1,6 @@
 import v4 from 'uuid';
 
-let tasks = [
-
-];
+let tasks = [];
 
 // Get all tasks
 const getAllTasks = (req, res) => {
@@ -25,6 +23,8 @@ const createTasks = (req, res) => {
 }
 
 
+// change task status
+// should include all changes in next commit
 const changeTaskStatus = (req, res) => {
   const id = req.params.id;
 

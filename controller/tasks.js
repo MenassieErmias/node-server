@@ -34,3 +34,5 @@ const changeTaskStatus = (req, res) => {
 }
 
 
+
+export default { createTasks, getAllTasks, changeTaskStatus }

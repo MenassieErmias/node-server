@@ -10,7 +10,7 @@ const getAllTasks = (req, res) => {
 }
 
 const createTasks = (req, res) => {
-  const { name, time, endTime, complete: false} = req.body;
+  const { name, time, endTime } = req.body;
 
   const newTask = {
     id: v4(),
@@ -23,4 +23,14 @@ const createTasks = (req, res) => {
   tasks = [...tasks, newTask];
 
 }
+
+
+const changeTaskStatus = (req, res) => {
+  const id = req.params.id;
+
+  const index = tasks.indexOf(tasks.find(task => task.id === id));
+
+  tasks[index].complete = !tasks[index].complete;
+}
+
 
